@@ -76,8 +76,6 @@ int main(int argc, const char *argv[]) {
       hexString = [hexString substringFromIndex:1];
     }
     
-    NSLog(@"hexString: %@", hexString);
-    
     unsigned int r = 0;
     unsigned int g = 0;
     unsigned int b = 0;

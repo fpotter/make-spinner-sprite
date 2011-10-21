@@ -1,0 +1,233 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		28AB34A4144E3C6A000CBDA9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28AB34A3144E3C6A000CBDA9 /* Foundation.framework */; };
+		28AB34A7144E3C6A000CBDA9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 28AB34A6144E3C6A000CBDA9 /* main.m */; };
+		28AB34B2144E3D78000CBDA9 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28AB34B1144E3D78000CBDA9 /* Quartz.framework */; };
+		28AB34B6144E3D98000CBDA9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28AB34B5144E3D98000CBDA9 /* Cocoa.framework */; };
+		28AB34BB144E4149000CBDA9 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28AB34B3144E3D87000CBDA9 /* AppKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		28AB349F144E3C6A000CBDA9 /* MakeSpinner */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MakeSpinner; sourceTree = BUILT_PRODUCTS_DIR; };
+		28AB34A3144E3C6A000CBDA9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		28AB34A6144E3C6A000CBDA9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		28AB34A9144E3C6B000CBDA9 /* MakeSpinner-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MakeSpinner-Prefix.pch"; sourceTree = "<group>"; };
+		28AB34B1144E3D78000CBDA9 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
+		28AB34B3144E3D87000CBDA9 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		28AB34B5144E3D98000CBDA9 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		28AB349C144E3C6A000CBDA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AB34BB144E4149000CBDA9 /* AppKit.framework in Frameworks */,
+				28AB34B6144E3D98000CBDA9 /* Cocoa.framework in Frameworks */,
+				28AB34B2144E3D78000CBDA9 /* Quartz.framework in Frameworks */,
+				28AB34A4144E3C6A000CBDA9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		28AB3494144E3C6A000CBDA9 = {
+			isa = PBXGroup;
+			children = (
+				28AB34B5144E3D98000CBDA9 /* Cocoa.framework */,
+				28AB34B3144E3D87000CBDA9 /* AppKit.framework */,
+				28AB34B1144E3D78000CBDA9 /* Quartz.framework */,
+				28AB34A5144E3C6A000CBDA9 /* MakeSpinner */,
+				28AB34A2144E3C6A000CBDA9 /* Frameworks */,
+				28AB34A0144E3C6A000CBDA9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		28AB34A0144E3C6A000CBDA9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				28AB349F144E3C6A000CBDA9 /* MakeSpinner */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		28AB34A2144E3C6A000CBDA9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				28AB34A3144E3C6A000CBDA9 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		28AB34A5144E3C6A000CBDA9 /* MakeSpinner */ = {
+			isa = PBXGroup;
+			children = (
+				28AB34A6144E3C6A000CBDA9 /* main.m */,
+				28AB34A8144E3C6B000CBDA9 /* Supporting Files */,
+			);
+			name = MakeSpinner;
+			path = MakeSpinner;
+			sourceTree = "<group>";
+		};
+		28AB34A8144E3C6B000CBDA9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				28AB34A9144E3C6B000CBDA9 /* MakeSpinner-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		28AB349E144E3C6A000CBDA9 /* MakeSpinner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28AB34AE144E3C6B000CBDA9 /* Build configuration list for PBXNativeTarget "MakeSpinner" */;
+			buildPhases = (
+				28AB349B144E3C6A000CBDA9 /* Sources */,
+				28AB349C144E3C6A000CBDA9 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MakeSpinner;
+			productName = MakeSpinner;
+			productReference = 28AB349F144E3C6A000CBDA9 /* MakeSpinner */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		28AB3496144E3C6A000CBDA9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 28AB3499144E3C6A000CBDA9 /* Build configuration list for PBXProject "MakeSpinner" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 28AB3494144E3C6A000CBDA9;
+			productRefGroup = 28AB34A0144E3C6A000CBDA9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				28AB349E144E3C6A000CBDA9 /* MakeSpinner */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		28AB349B144E3C6A000CBDA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AB34A7144E3C6A000CBDA9 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		28AB34AC144E3C6B000CBDA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		28AB34AD144E3C6B000CBDA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+		28AB34AF144E3C6B000CBDA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MakeSpinner/MakeSpinner-Prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = MakeSpinner;
+			};
+			name = Debug;
+		};
+		28AB34B0144E3C6B000CBDA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MakeSpinner/MakeSpinner-Prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = MakeSpinner;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		28AB3499144E3C6A000CBDA9 /* Build configuration list for PBXProject "MakeSpinner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28AB34AC144E3C6B000CBDA9 /* Debug */,
+				28AB34AD144E3C6B000CBDA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28AB34AE144E3C6B000CBDA9 /* Build configuration list for PBXNativeTarget "MakeSpinner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28AB34AF144E3C6B000CBDA9 /* Debug */,
+				28AB34B0144E3C6B000CBDA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 28AB3496144E3C6A000CBDA9 /* Project object */;
+}

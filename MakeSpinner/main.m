@@ -76,23 +76,25 @@ int main(int argc, const char *argv[]) {
       hexString = [hexString substringFromIndex:1];
     }
     
-    unsigned int r = 0;
-    unsigned int g = 0;
-    unsigned int b = 0;
-    unsigned int a = 0;
-    
-    [[NSScanner scannerWithString:[hexString substringWithRange:NSMakeRange(0, 2)]] scanHexInt:&r];
-    [[NSScanner scannerWithString:[hexString substringWithRange:NSMakeRange(2, 2)]] scanHexInt:&g];
-    [[NSScanner scannerWithString:[hexString substringWithRange:NSMakeRange(4, 2)]] scanHexInt:&g];
+    if (hexString.length == 6 || hexString.length == 8) {
+      unsigned int r = 0;
+      unsigned int g = 0;
+      unsigned int b = 0;
+      unsigned int a = 255;
+      
+      [[NSScanner scannerWithString:[hexString substringWithRange:NSMakeRange(0, 2)]] scanHexInt:&r];
+      [[NSScanner scannerWithString:[hexString substringWithRange:NSMakeRange(2, 2)]] scanHexInt:&g];
+      [[NSScanner scannerWithString:[hexString substringWithRange:NSMakeRange(4, 2)]] scanHexInt:&b];
 
-    if (hexString.length == 8) {
-      [[NSScanner scannerWithString:[hexString substringWithRange:NSMakeRange(6, 2)]] scanHexInt:&a];
+      if (hexString.length == 8) {
+        [[NSScanner scannerWithString:[hexString substringWithRange:NSMakeRange(6, 2)]] scanHexInt:&a];
+      }
+      
+      color = [NSColor colorWithCalibratedRed:(r / 255.0)
+                                        green:(g / 255.0)
+                                         blue:(b / 255.0)
+                                        alpha:(a / 255.0)];
     }
-
-    color = [NSColor colorWithCalibratedRed:(r / 255.0)
-                                      green:(g / 255.0)
-                                       blue:(b / 255.0)
-                                      alpha:(a / 255.0)];
   }
   
   if ([defaults objectForKey:@"dashWidth"] != nil) {
@@ -114,23 +116,25 @@ int main(int argc, const char *argv[]) {
       hexString = [hexString substringFromIndex:1];
     }
     
-    unsigned int r = 0;
-    unsigned int g = 0;
-    unsigned int b = 0;
-    unsigned int a = 255;
-    
-    [[NSScanner scannerWithString:[hexString substringWithRange:NSMakeRange(0, 2)]] scanHexInt:&r];
-    [[NSScanner scannerWithString:[hexString substringWithRange:NSMakeRange(2, 2)]] scanHexInt:&g];
-    [[NSScanner scannerWithString:[hexString substringWithRange:NSMakeRange(4, 2)]] scanHexInt:&g];
-    
-    if (hexString.length == 8) {
-      [[NSScanner scannerWithString:[hexString substringWithRange:NSMakeRange(6, 2)]] scanHexInt:&a];
+    if (hexString.length == 6 || hexString.length == 8) {
+      unsigned int r = 0;
+      unsigned int g = 0;
+      unsigned int b = 0;
+      unsigned int a = 255;
+      
+      [[NSScanner scannerWithString:[hexString substringWithRange:NSMakeRange(0, 2)]] scanHexInt:&r];
+      [[NSScanner scannerWithString:[hexString substringWithRange:NSMakeRange(2, 2)]] scanHexInt:&g];
+      [[NSScanner scannerWithString:[hexString substringWithRange:NSMakeRange(4, 2)]] scanHexInt:&b];
+      
+      if (hexString.length == 8) {
+        [[NSScanner scannerWithString:[hexString substringWithRange:NSMakeRange(6, 2)]] scanHexInt:&a];
+      }
+      
+      backgroundColor = [NSColor colorWithCalibratedRed:(r / 255.0)
+                                                  green:(g / 255.0)
+                                                   blue:(b / 255.0)
+                                                  alpha:(a / 255.0)];
     }
-    
-    backgroundColor = [NSColor colorWithCalibratedRed:(r / 255.0)
-                                                green:(g / 255.0)
-                                                 blue:(b / 255.0)
-                                                alpha:(a / 255.0)];
   }
   
   if ([defaults objectForKey:@"output"] != nil) {

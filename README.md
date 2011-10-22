@@ -1,10 +1,10 @@
 # MakeSpinner
 
-Generate spinners for the web in the form of animated, 24-bit PNG sprites.  Helpful in the cases where an animated GIF won't work because you have a non-opaque background and the 1-bit GIF transparency doesn't look so nice.
+Generate spinners for the web in the form of animated, 24-bit PNG sprites.  Helpful in the cases where an animated GIF won't work because you have a non-solid background and the 1-bit GIF transparency doesn't look so nice.
 
 Should work in most any browser, probably even IE6.
 
-![Sample](http://fpotter-make-spinner-sprite.s3.amazonaws.com/defaults.png)
+[Live Sample](http://fpotter-make-spinner-sprite.s3.amazonaws.com/sample.html)
 
 ## Usage
 

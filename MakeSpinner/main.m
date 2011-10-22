@@ -72,10 +72,6 @@ int main(int argc, const char *argv[]) {
   if ([defaults objectForKey:@"color"] != nil) {
     NSString *hexString = [defaults objectForKey:@"color"];
     
-    if ([hexString hasPrefix:@"#"]) {
-      hexString = [hexString substringFromIndex:1];
-    }
-    
     if (hexString.length == 6 || hexString.length == 8) {
       unsigned int r = 0;
       unsigned int g = 0;
@@ -112,10 +108,6 @@ int main(int argc, const char *argv[]) {
   if ([defaults objectForKey:@"backgroundColor"] != nil) {
     NSString *hexString = [defaults objectForKey:@"backgroundColor"];
     
-    if ([hexString hasPrefix:@"#"]) {
-      hexString = [hexString substringFromIndex:1];
-    }
-    
     if (hexString.length == 6 || hexString.length == 8) {
       unsigned int r = 0;
       unsigned int g = 0;
@@ -145,7 +137,7 @@ int main(int argc, const char *argv[]) {
   }
 
   if (showUsage) {
-    fprintf(stderr, "usage: %s -output MySpinner.png [-dashes 12] [-dashWidth 1.8] [-radiusStart 5] [-radiusEnd 10] [-padding 3] [-color #000000] [-backgroundColor #00000000]\n", argv[0]);
+    fprintf(stderr, "usage: %s -output MySpinner.png [-dashes 12] [-dashWidth 1.8] [-radiusStart 5] [-radiusEnd 10] [-padding 3] [-color RRGGBB] [-backgroundColor RRGGBB]\n", argv[0]);
     return 1;
   }
 

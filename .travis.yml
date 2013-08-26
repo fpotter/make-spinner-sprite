@@ -1,0 +1,3 @@
+language: objective-c
+project: MakeSpinnerSprite.xcodeproj
+scheme: MakeSpinnerSprite
